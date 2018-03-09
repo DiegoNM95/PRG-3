@@ -4,9 +4,12 @@ build/
 
 #netbeans specific
 core
-nbproject/*
-!nbproject/project.properties
-!nbproject/project.xml
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
 
 # Compiled class file
 *.class
