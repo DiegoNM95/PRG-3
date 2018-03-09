@@ -1,15 +1,11 @@
-#ant specific
-dist/
-build/
-
 #netbeans specific
 core
-nbproject/private/
-build/
-nbbuild/
-dist/
-nbdist/
-.nb-gradle/
+nbproject/private/*
+build/*
+nbbuild/*
+dist/*
+nbdist/*
+.nb-gradle/*
 
 # Compiled class file
 *.class
@@ -21,7 +17,7 @@ nbdist/
 *.ctxt
 
 # Mobile Tools for Java (J2ME)
-.mtj.tmp/
+.mtj.tmp/*
 
 # Package Files #
 *.jar
