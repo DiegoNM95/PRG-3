@@ -13,6 +13,10 @@ import java.util.Date;
  */
 
 public class Alumno extends Miembro{
+    private int gradoAcademico;
+    private String nombreResponsable;
+    private int numeroResponsable;
+    
     
 public Alumno(String nombres, String apellidos, String carnet
             , String direccion, String genero,
