@@ -11,13 +11,10 @@ import java.util.Date;
  *
  * @author Cesar Kevin Sanchez Garcia
  */
+
 public class Alumno extends Miembro{
-    //private Date fechaMatricula;
-    private int gradoAcademico;
-    private String nombreResponsable;
-    private int numeroResponsable;
     
-    public Alumno(String nombres, String apellidos, String carnet
+public Alumno(String nombres, String apellidos, String carnet
             , String direccion, String genero,
             int gradoAcademico, String nombreResponsable, int numeroResponsable)
     {
@@ -26,7 +23,6 @@ public class Alumno extends Miembro{
         this.gradoAcademico = gradoAcademico;
         this.nombreResponsable = nombreResponsable;
         this.numeroResponsable = numeroResponsable;
-       
     }
     
     //public Date getFechaMatricula (){
@@ -45,7 +41,6 @@ public class Alumno extends Miembro{
     public int getNumeroResponsable(){
         return numeroResponsable;
     }
-    
     
     public String toString(){
         String DatosAlumno;
