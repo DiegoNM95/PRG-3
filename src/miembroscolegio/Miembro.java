@@ -21,34 +21,35 @@ public class Miembro {
    protected String direccion;
    protected String genero;
    
-   Miembro(String nombres, String apellidos, String carnet, String direccion,
+    Miembro(String nombres, String apellidos, String carnet, String direccion,
            String genero ){
-   this.nombres=nombres;
-   this.apellidos=apellidos;
-   this.carnet=carnet;
-   //this.fechaNacimiento=fechaNacimiento;
-   this.direccion=direccion;
-   this.genero=genero;
-   }
+        this.nombres=nombres;
+        this.apellidos=apellidos;
+        this.carnet=carnet;
+        //this.fechaNacimiento=fechaNacimiento;
+        this.direccion=direccion;
+        this.genero=genero;
+    }
    
-   public String getNombres(){
-   return nombres;
-   }
-   public String getApellidos(){
-   return apellidos;
-   }
-        public String getCarnet(){
-   return carnet;     
-   }
-     public Date getFechaNac(){
-   return fechaNacimiento;
-     }
-       public String getDireccion(){
-   return direccion;
-     }
-     public String getGenero(){
-   return genero;
-     }
+    public String getNombres(){
+        return nombres;
+    }
+    public String getApellidos(){
+        return apellidos;
+    }
+    public String getCarnet(){
+        return carnet;     
+    }
+    public Date getFechaNac(){
+        return fechaNacimiento;
+    }
+    public String getDireccion(){
+        return direccion;
+    }
+    public String getGenero(){
+        return genero;
+    }
+    
    @Override
     public String toString ()
     {
@@ -60,8 +61,5 @@ public class Miembro {
      texto +="Genero: " +getGenero()+"\n";
      
      return texto;
-    }
-    
-    
-     
+    } 
 }
