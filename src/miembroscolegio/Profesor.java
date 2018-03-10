@@ -15,12 +15,12 @@ import java.util.Date;
 public class Profesor {
     private BigDecimal sueldo;
     private String dui;
-    private Date fechaIngreso;
+    //private Date fechaIngreso;
     
-    public Profesor(BigDecimal sueldo, String dui, Date fechaIngreso){
+    public Profesor(BigDecimal sueldo, String dui){
         this.sueldo = sueldo;
         this.dui = dui;
-        this.fechaIngreso= fechaIngreso;
+        //this.fechaIngreso= fechaIngreso;
         
       
     }
@@ -33,13 +33,20 @@ public class Profesor {
         return dui;
             
         }
-      public Date getfechaIngreso(){
+      /*public Date getfechaIngreso(){
         return fechaIngreso;
             
-        }
-      public String mostrarDetalle(){
-        return null;
+        }*/
+      public String toString(){
+        String DatosProfesor;
+        
+        DatosProfesor="Sueldo: "+ getSueldo() + "\n";
+        DatosProfesor += "Dui "+ getdui() + "\n";
+       
+        
+        return DatosProfesor;
+    }
             
         }
     
-}
+

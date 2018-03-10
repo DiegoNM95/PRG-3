@@ -12,23 +12,23 @@ import java.util.Date;
  * @author Cesar Kevin Sanchez Garcia
  */
 public class Alumno {
-    private Date fechaMatricula;
+    //private Date fechaMatricula;
     private int gradoAcademico;
     private String nombreResponsable;
     private int numeroResponsable;
     
-    public Alumno(Date fechaMatricula, int gradoAcademico, String nombreResponsable, int numeroResponsable){
-        this.fechaMatricula = fechaMatricula;
+    public Alumno( int gradoAcademico, String nombreResponsable, int numeroResponsable){
+        //this.fechaMatricula = fechaMatricula;
         this.gradoAcademico = gradoAcademico;
         this.nombreResponsable = nombreResponsable;
         this.numeroResponsable = numeroResponsable;
         
     }
     
-    public Date getFechaMatricula (){
+    /*public Date getFechaMatricula (){
         return fechaMatricula;
         
-    }
+    }*/
     
     public int getGradoAcademico (){
         return gradoAcademico;
@@ -42,7 +42,7 @@ public class Alumno {
         return numeroResponsable;
     }
     
-    public String mostrarDetalles(){
-        return null;
+    public String MostrarDetalle(){
+      return null;
     }
 }
