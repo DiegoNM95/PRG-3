@@ -16,6 +16,10 @@ public class MiembrosColegio {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        Miembro miembro1= new Miembro("Vidal Alexander", "Useda Cruz",
+                "UC100115", "jabfiugadskfbcuia", "M");
+        System.out.println(miembro1.toString());
     }
     
 }
