@@ -47,6 +47,6 @@ public class Profesor {
         return DatosProfesor;
     }
             
-        }
+}
     
 
