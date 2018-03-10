@@ -45,8 +45,8 @@ public class Profesor extends Miembro {
         
         DatosProfesor="Sueldo: "+ getSueldo() + "\n";
         DatosProfesor += "Dui "+ getdui() + "\n";
-        DatosProfesor += "Nombres : " + getNombres() + "Apellidos: " +
-                getApellidos() + "\n";
+        DatosProfesor += "Nombres : " + getNombres() + "\n";
+        DatosProfesor += "Apellidos: " +getApellidos() + "\n";
         DatosProfesor += "Carnet" + getCarnet() + " " + "\n";
         DatosProfesor += "Direccion:" + getDireccion() + "\n";
         DatosProfesor += "genero" + getGenero() + "\n";
