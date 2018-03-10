@@ -22,4 +22,7 @@ public class MiembrosColegio {
         System.out.println(miembro1.toString());
     }
     
+        
+    
+    
 }

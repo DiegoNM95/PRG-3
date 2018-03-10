@@ -11,19 +11,22 @@ import java.util.Date;
  *
  * @author Cesar Kevin Sanchez Garcia
  */
-public class Alumno{
+public class Alumno extends Miembro{
     //private Date fechaMatricula;
     private int gradoAcademico;
     private String nombreResponsable;
     private int numeroResponsable;
     
-    public Alumno(int gradoAcademico, String nombreResponsable, int numeroResponsable){
+    public Alumno(String nombres, String apellidos, String carnet
+            , String direccion, String genero,
+            int gradoAcademico, String nombreResponsable, int numeroResponsable)
+    {
         //this.fechaMatricula = fechaMatricula;
-        
+        super(nombres, apellidos, carnet, direccion, genero);
         this.gradoAcademico = gradoAcademico;
         this.nombreResponsable = nombreResponsable;
         this.numeroResponsable = numeroResponsable;
-        
+       
     }
     
     //public Date getFechaMatricula (){
@@ -45,10 +48,14 @@ public class Alumno{
     
     
     public String toString(){
-        
         String DatosAlumno;
-        
-        DatosAlumno= "Grado academico:" + getGradoAcademico() + "\n";
+        Miembro MiembrosClass = new Miembro(nombres, apellidos, carnet, direccion, genero);
+        DatosAlumno= "Nombre:" + MiembrosClass.getNombres() + " " + 
+                MiembrosClass.getApellidos() + "\n";
+        DatosAlumno+= "Carnet" + MiembrosClass.getCarnet() + " " + "\n";
+        DatosAlumno+= "Direccion:" + MiembrosClass.getDireccion() + "\n";
+        DatosAlumno+= "genero" + MiembrosClass.getGenero() + "\n";
+        DatosAlumno+= "Grado academico:" + getGradoAcademico() + "\n";
         DatosAlumno+= "Nombre Responsable:" + getNombreResponsable() 
                 + "" + "Telefono del responsable:" + getNumeroResponsable() 
                 + "\n"; 
