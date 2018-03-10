@@ -12,12 +12,14 @@ import java.util.Date;
  *
  * @Henry Moises Marinero Gutierrez.
  */
-public class Profesor {
+public class Profesor extends Miembro {
     private BigDecimal sueldo;
     private String dui;
     //private Date fechaIngreso;
     
-    public Profesor(BigDecimal sueldo, String dui){
+    public Profesor(String nombres, String apellidos, String carnet, 
+            String direccion, String genero, BigDecimal sueldo, String dui){
+        super(nombres, apellidos, carnet, direccion, genero);
         this.sueldo = sueldo;
         this.dui = dui;
         //this.fechaIngreso= fechaIngreso;
@@ -37,11 +39,16 @@ public class Profesor {
         return fechaIngreso;
             
         }*/
+      @Override
       public String toString(){
         String DatosProfesor;
         
         DatosProfesor="Sueldo: "+ getSueldo() + "\n";
         DatosProfesor += "Dui "+ getdui() + "\n";
+        DatosProfesor= "Nombres : " + getNombres() + "Apellidos: " + getApellidos() + "\n";
+        DatosProfesor+= "Carnet" + getCarnet() + " " + "\n";
+        DatosProfesor+= "Direccion:" + getDireccion() + "\n";
+        DatosProfesor+= "genero" + getGenero() + "\n";
        
         
         return DatosProfesor;
