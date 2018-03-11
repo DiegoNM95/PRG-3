@@ -46,14 +46,15 @@ public Alumno(String nombres, String apellidos, String carnet
         return numeroResponsable;
     }
     
+    @Override
     public String toString(){
         String DatosAlumno;
-        Miembro MiembrosClass = new Miembro(nombres, apellidos, carnet, direccion, genero);
-        DatosAlumno= "Nombre:" + MiembrosClass.getNombres() + " " + 
-                MiembrosClass.getApellidos() + "\n";
-        DatosAlumno+= "Carnet" + MiembrosClass.getCarnet() + " " + "\n";
-        DatosAlumno+= "Direccion:" + MiembrosClass.getDireccion() + "\n";
-        DatosAlumno+= "genero" + MiembrosClass.getGenero() + "\n";
+        
+        DatosAlumno= "Nombre:" + getNombres() + " " + 
+                getApellidos() + "\n";
+        DatosAlumno+= "Carnet" + getCarnet() + " " + "\n";
+        DatosAlumno+= "Direccion:" + getDireccion() + "\n";
+        DatosAlumno+= "genero" + getGenero() + "\n";
         DatosAlumno+= "Grado academico:" + getGradoAcademico() + "\n";
         DatosAlumno+= "Nombre Responsable:" + getNombreResponsable() 
                 + "" + "Telefono del responsable:" + getNumeroResponsable() 
