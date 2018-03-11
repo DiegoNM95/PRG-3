@@ -5,8 +5,6 @@
  */
 package miembroscolegio;
 
-import java.util.Date;
-
 /**
  *
  * @author Cesar Kevin Sanchez Garcia
@@ -14,19 +12,15 @@ import java.util.Date;
 
 public class Alumno extends Miembro{
     private int gradoAcademico;
-    private String nombreResponsable;
-    private int numeroResponsable;
     
     
 public Alumno(String nombres, String apellidos, String carnet
             , String direccion, String genero,
-            int gradoAcademico, String nombreResponsable, int numeroResponsable)
+            int gradoAcademico)
     {
         //this.fechaMatricula = fechaMatricula;
         super(nombres, apellidos, carnet, direccion, genero);
         this.gradoAcademico = gradoAcademico;
-        this.nombreResponsable = nombreResponsable;
-        this.numeroResponsable = numeroResponsable;
     }
     
     //public Date getFechaMatricula (){
@@ -38,27 +32,15 @@ public Alumno(String nombres, String apellidos, String carnet
         return gradoAcademico;
     }
     
-    public String getNombreResponsable (){
-        return nombreResponsable;
-    }
-    
-    public int getNumeroResponsable(){
-        return numeroResponsable;
-    }
-    
     @Override
     public String toString(){
         String DatosAlumno;
         
-        DatosAlumno= "Nombre:" + getNombres() + " " + 
-                getApellidos() + "\n";
-        DatosAlumno+= "Carnet" + getCarnet() + " " + "\n";
-        DatosAlumno+= "Direccion:" + getDireccion() + "\n";
-        DatosAlumno+= "genero" + getGenero() + "\n";
-        DatosAlumno+= "Grado academico:" + getGradoAcademico() + "\n";
-        DatosAlumno+= "Nombre Responsable:" + getNombreResponsable() 
-                + "" + "Telefono del responsable:" + getNumeroResponsable() 
-                + "\n"; 
+        DatosAlumno= "Nombre: " + getNombres() + " " + getApellidos() + "\n";
+        DatosAlumno+= "Carnet: " + getCarnet() + " " + "\n";
+        DatosAlumno+= "Direccion: " + getDireccion() + "\n";
+        DatosAlumno+= "genero: " + getGenero() + "\n";
+        DatosAlumno+= "Grado académico: " + getGradoAcademico() + "\n"; 
         
         return DatosAlumno;
     }

@@ -6,8 +6,6 @@
 package miembroscolegio;
 
 import java.math.BigDecimal;
-import java.util.Date;
-
 /**
  *
  * @Henry Moises Marinero Gutierrez.
@@ -44,12 +42,12 @@ public class Profesor extends Miembro {
         String DatosProfesor;
         
         DatosProfesor="Sueldo: "+ getSueldo() + "\n";
-        DatosProfesor += "Dui "+ getdui() + "\n";
-        DatosProfesor += "Nombres : " + getNombres() + "\n";
+        DatosProfesor += "Dui: "+ getdui() + "\n";
+        DatosProfesor += "Nombres: " + getNombres() + "\n";
         DatosProfesor += "Apellidos: " +getApellidos() + "\n";
-        DatosProfesor += "Carnet" + getCarnet() + " " + "\n";
-        DatosProfesor += "Direccion:" + getDireccion() + "\n";
-        DatosProfesor += "genero" + getGenero() + "\n";
+        DatosProfesor += "Carnet:" + getCarnet() + " " + "\n";
+        DatosProfesor += "Direccion: " + getDireccion() + "\n";
+        DatosProfesor += "Género: " + getGenero() + "\n";
    
         return DatosProfesor;
     }
